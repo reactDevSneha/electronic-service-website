@@ -66,8 +66,6 @@ h1 {
   font-weight: 700;
   margin-bottom: 2rem;
 
-  
-  
 }
 h1 span {
     color:var(--secondary-color)
@@ -86,19 +84,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h3{
-
         font-size: 2.2rem;
         margin-bottom: 1.5rem;
-
-
-}
-h4 {
- 
 }
 
-h5 {
- 
-}
 
 p {
   font-size: 1.6rem;
@@ -186,7 +175,7 @@ p {
 }
 .navigation-wrap.scroll-on .nav-link:hover,
 .navigation-wrap.scroll-on .nav-link.active{
-  color:var(--primary-color);
+  color:var(--primary-color) !important;
 }
 
 /* hero section design  */
