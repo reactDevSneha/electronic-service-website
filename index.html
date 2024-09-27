@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- own css  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive-style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+     <!-- Top Bar -->
+     <div class="top-bar">
+        <div class="container">
+            <div class="row justify-content-between py-2">
+                <div class="col-auto">
+                    <a href="#" class="text-secondary me-3">About</a>
+                    <a href="#" class="text-secondary me-3">Services</a>
+                    <a href="#" class="text-secondary">FAQ</a>
+                </div>
+                <div class="col-auto">
+                    <span class="me-3"><i class="fas fa-phone"></i> +1234 567890</span>
+                    <span><i class="fas fa-envelope"></i> support@electropro.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container py-3">
+                <a class="navbar-brand" href="#">ElectroPro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="#about">About</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#price">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary ms-3">Get Service</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 hero-content">
+                                <h1>We Provide <span>Electronic Services</span> That You Can Trust!</h1>
+                                <p>Experience reliable and innovative electronic solutions tailored to your needs. From repairs to installations, we’ve got you covered.</p>
+                                <a href="#" class="btn btn-primary me-3">Get Service</a>
+                                <a href="#" class="btn btn-outline">Learn More</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="images/banner/banner-1.jpg" alt="Electronic Service" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 hero-content">
+                                <h1>Your One-Stop Shop for <span> All Electronics!</span>
+                                   </h1>
+                                <p>Discover a wide range of electronic products and services designed to meet your needs. Shop now for the best deals!</p>
+                                <a href="#" class="btn btn-primary me-3">Shop Now</a>
+                                <a href="#" class="btn btn-outline">Browse Products</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="images/banner/banner-2.jpg" alt="Electronics Shop" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 hero-content">
+                                <h1>Upgrade Your Home with the <span>Latest Gadgets!</span></h1>
+                                <p>From smart TVs to cutting-edge appliances, enhance your home with our latest electronic offerings.</p>
+                                <a href="#" class="btn btn-primary me-3">Explore Gadgets</a>
+                                <a href="#" class="btn btn-outline">Learn More</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="images/banner/banner-3.jpg" alt="Latest Gadgets" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Service Boxes -->
+    <section class="service-boxes">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <h3>Emergency Repairs</h3>
+                        <p>Our skilled technicians are available 24/7 to handle urgent electronic repairs, ensuring your devices are up and running in no time.</p>
+                        <a href="#" class="btn btn-outline mt-3">LEARN MORE </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <h3>Service Schedule</h3>
+                        <p>Book a service at your convenience! Our flexible scheduling options make it easy to get your electronics serviced without the hassle.</p>
+                        <a href="#" class="btn btn-outline mt-3">LEARN MORE </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <h3>Opening Hours</h3>
+                        <p>Monday: 8:00 - 20:00<br> Tuesday-Friday: 12:00 - 20:00<br>Saturday: 9:00 - 18:30<br>Sunday - Thursday: 9:00 - 15:00</p>
+                        <a href="#" class="btn btn-outline mt-3">LEARN MORE </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    <!--service section -2   -->
+    <section id="services" class="wrapper about-section">
+        <div class="container text-center">
+            <h2>Your Trusted Partner for All Electronic Needs</h2>
+            <p class="subtitle">We provide reliable and efficient electronic services to keep your devices running smoothly.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-6">
+                    <div class="about-item">
+                        <i class="fas fa-tools"></i>
+                        <h4>Expert Repairs</h4>
+                        <p>Our experienced technicians are ready to handle any repair, ensuring your electronics are in top condition.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="about-item">
+                        <i class="fas fa-headphones-alt"></i>
+                        <h4>Quality Service</h4>
+                        <p>We prioritize customer satisfaction by offering exceptional service and high-quality parts for all repairs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="about-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Warranty Assurance</h4>
+                        <p>All our services come with a warranty, giving you peace of mind with your electronic devices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row stats-section">
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats-item">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>500+</h4>
+                        <p>Devices Repaired</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats-item">
+                        <i class="fas fa-user-cog"></i>
+                        <h4>15</h4>
+                        <p>Certified Technicians</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats-item">
+                        <i class="fas fa-thumbs-up"></i>
+                        <h4>1000+</h4>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>5</h4>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--about section -3  -->
+    <section id="about" class="wrapper about-section">
+        <div class="container text-center">
+            <h2>We Are Committed to Delivering Top-Notch Electronic Services</h2>
+            <p class="subtitle">Your trusted partner for all electronic repairs and solutions.</p>
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 text-left">
+                    <h3>Who We Are</h3>
+                    <p>We are a dedicated team of electronics experts passionate about providing reliable and high-quality services for all your electronic devices. With years of experience, we ensure your gadgets are in safe hands.</p>
+                    <p>Our mission is to offer tailored solutions that meet your specific needs, ensuring your satisfaction every step of the way.</p>
+                    <ul class="services-list">
+                        <li><i class="fas fa-check-circle"></i> Expert diagnostics and troubleshooting for all devices.</li>
+                        <li><i class="fas fa-check-circle"></i> Quick turnaround times on repairs and services.</li>
+                        <li><i class="fas fa-check-circle"></i> Comprehensive maintenance plans to extend device life.</li>
+                        <li><i class="fas fa-check-circle"></i> Use of high-quality, genuine replacement parts.</li>
+                        <li><i class="fas fa-check-circle"></i> Friendly customer support for all inquiries.</li>
+                        <li><i class="fas fa-check-circle"></i> Commitment to providing value and peace of mind.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="video-thumbnail">
+                        <img src="images/banner/electricity.jpg" alt="Electronics Service Video Thumbnail" class="img-fluid">
+                        <a href="#" class="play-btn"><i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  <!-- Start Call to action -->
+<section class="electronic-call-action overlay" data-stellar-background-ratio="0.5">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-12">
+				<div class="content">
+					<h2>Need Instant Tech Support? Call @ 1234 56789</h2>
+					<p>Experience seamless service with our expert tech assistance.</p>
+					<div class="button">
+						<a href="#" class="btn btn-primary">Get Support</a>
+						<a href="#" class="btn btn-outline">Explore Services<i class="fa fa-long-arrow-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--/ End Call to action -->
+
+   <!-- Pricing Table -->
+<section id="price" class="pricing-table section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="text-center">
+					<h2>Affordable Tech Support Packages</h2>
+					
+					<p class="mb-5">Choose the best plan that suits your needs and budget.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- Single Table -->
+			<div class="col-lg-4 col-md-12 col-12">
+				<div class="single-table">
+					<!-- Table Head -->
+					<div class="table-head">
+						<div class="icon">
+							<i class="icofont icofont-laptop"></i>
+						</div>
+						<h4 class="title">Basic Support</h4>
+						<div class="price">
+							<p class="amount">$99<span>/ Per Visit</span></p>
+						</div>	
+					</div>
+					<!-- Table List -->
+					<ul class="table-list">
+						<li><i class="icofont icofont-ui-check"></i>Remote assistance</li>
+						<li><i class="icofont icofont-ui-check"></i>Software installation</li>
+						<li class="cross"><i class="icofont icofont-ui-close"></i>On-site visit</li>
+						<li class="cross"><i class="icofont icofont-ui-close"></i>Hardware support</li>
+					</ul>
+					<div class="table-bottom">
+						<a class="btn" href="#">Book Now</a>
+					</div>
+				</div>
+			</div>
+			<!-- End Single Table-->
+			<!-- Single Table -->
+			<div class="col-lg-4 col-md-12 col-12">
+				<div class="single-table">
+					<!-- Table Head -->
+					<div class="table-head">
+						<div class="icon">
+							<i class="icofont icofont-settings"></i>
+						</div>
+						<h4 class="title">Standard Support</h4>
+						<div class="price">
+							<p class="amount">$199<span>/ Per Visit</span></p>
+						</div>	
+					</div>
+					<!-- Table List -->
+					<ul class="table-list">
+						<li><i class="icofont icofont-ui-check"></i>Remote assistance</li>
+						<li><i class="icofont icofont-ui-check"></i>Software installation</li>
+						<li><i class="icofont icofont-ui-check"></i>On-site visit</li>
+						<li class="cross"><i class="icofont icofont-ui-close"></i>Hardware support</li>
+					</ul>
+					<div class="table-bottom">
+						<a class="btn" href="#">Book Now</a>
+					</div>
+				</div>
+			</div>
+			<!-- End Single Table-->
+			<!-- Single Table -->
+			<div class="col-lg-4 col-md-12 col-12">
+				<div class="single-table">
+					<!-- Table Head -->
+					<div class="table-head">
+						<div class="icon">
+							<i class="icofont icofont-rocket"></i>
+						</div>
+						<h4 class="title">Premium Support</h4>
+						<div class="price">
+							<p class="amount">$299<span>/ Per Visit</span></p>
+						</div>	
+					</div>
+					<!-- Table List -->
+					<ul class="table-list">
+						<li><i class="icofont icofont-ui-check"></i>Remote assistance</li>
+						<li><i class="icofont icofont-ui-check"></i>Software installation</li>
+						<li><i class="icofont icofont-ui-check"></i>On-site visit</li>
+						<li><i class="icofont icofont-ui-check"></i>Hardware support</li>
+					</ul>
+					<div class="table-bottom">
+						<a class="btn" href="#">Book Now</a>
+					</div>
+				</div>
+			</div>
+			<!-- End Single Table-->
+		</div>	
+	</div>	
+</section>	
+<!--/ End Pricing Table -->
+
+
+   <!-- Start Contact Us -->
+<section class="contact-us" id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title">
+					<h2>We're Here to Assist You. Book Your Appointment Now</h2>
+					
+					<p>Please fill in the form below to schedule an appointment.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-12">
+				<form class="form" action="#">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-12">
+							<div class="form-group">
+								<input name="name" type="text" placeholder="Name" required>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-12">
+							<div class="form-group">
+								<input name="email" type="email" placeholder="Email" required>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-12">
+							<div class="form-group">
+								<input name="phone" type="text" placeholder="Phone" required>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-12">
+							<div class="form-group">
+								<select name="department" class="nice-select form-control wide" required>
+									<option value="" disabled selected>Department</option>
+									<option value="cardiac">Cardiac Clinic</option>
+									<option value="neurology">Neurology</option>
+									<option value="dentistry">Dentistry</option>
+									<option value="gastroenterology">Gastroenterology</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-12">
+							<div class="form-group">
+								<select name="doctor" class="nice-select form-control wide" required>
+									<option value="" disabled selected>Doctor</option>
+									<option value="dr-akther">Dr. Akther Hossain</option>
+									<option value="dr-dery">Dr. Dery Alex</option>
+									<option value="dr-jovis">Dr. Jovis Karon</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-12">
+							<div class="form-group">
+								<input type="date" placeholder="Date" id="datepicker" required>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="form-group">
+								<textarea name="message" placeholder="Your Message Here....." required></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-7 col-md-6 col-12">
+							<div class="form-group">
+								<div class="button">
+									<button type="submit" class=" main-btn text-white">Book An Appointment</button>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</form>
+			</div>
+			<div class="col-lg-6 col-md-12">
+				<div class="contact-image d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100" height="100"> <!-- Adjust width and height as needed -->
+                        <path fill="#007bff" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                    </svg>
+                </div>
+                
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Contact Us -->
+<!-- news letter css  -->
+<section class="newsletter section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-12">
+				<div class="subscribe-text">
+					<h6>Subscribe to Our Newsletter</h6>
+					<p>Stay updated with the latest news and exclusive offers. Join our community!</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-12 d-flex align-items-center">
+				<div class="subscribe-form">
+					<form action="mail/mail.php" method="get" class="newsletter-inner d-flex flex-wrap">
+						<input name="EMAIL" placeholder="Your email address" class="common-input" required type="email">
+						<button class="main-btn text-white my-md-0 my-3">Subscribe</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- footer section  -->
+<footer id="footer" class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer">
+                        <h2>About Us</h2>
+                        <p>We provide top-notch electronic services, from repairs to installations. Our expert team is dedicated to ensuring your satisfaction.</p>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li> 
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-vimeo-v"></i></a></li> 
+                            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li> 
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer f-link">
+                        <h2>Quick Links</h2>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Support</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consulting</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Repair Services</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer">
+                        <h2>Open Hours</h2>
+                        <p>We are here to assist you at any time.</p>
+                        <ul class="time-sidual">
+                            <li class="day">Monday - Friday <span>8.00-20.00</span></li>
+                            <li class="day">Saturday <span>9.00-18.30</span></li>
+                            <li class="day">Sunday <span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer">
+                        <h2>Newsletter</h2>
+                        <p>Subscribe to our newsletter for the latest updates and offers in electronic services.</p>
+                        <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner d-flex flex-wrap">
+                            <input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'" required="" type="email">
+                            <button class=" btn"><i class="fa-regular fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="copyright-content">
+                        <p>© Copyright 2024 | All Rights Reserved by <a href="https://www.yourelectronicservice.com" target="_blank">yourelectronicservice.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- own js  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
